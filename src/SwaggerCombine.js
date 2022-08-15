@@ -476,9 +476,9 @@ class SwaggerCombine {
         throw new Error(`Name conflict in security definitions: ${conflictingSecurityDefs.join(', ')}`);
       }
 
-      if (!_.isEmpty(conflictingOperationIds)) {
-        throw new Error(`OperationID conflict: ${conflictingOperationIds.join(', ')}`);
-      }
+      //if (!_.isEmpty(conflictingOperationIds)) {
+      //  throw new Error(`OperationID conflict: ${conflictingOperationIds.join(', ')}`);
+      //}
 
       operationIds.push.apply(operationIds, newOperationIds);
 
